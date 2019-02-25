@@ -4,6 +4,8 @@
 <h1>2019-02-23:</h1>trying to create a copy from scratch without-cheating(without take a look at the source code of the template) and i choosed Monochromed by templated.
 <h1>2019-02-24:</h1>i didn't learned javascript yet so any template using js im working on it i will modify that part of it.
 <h1>2019-02-25:</h1>finished the HOMEPAGE of Monochromed.
+<br>
+<br>
 <p>My first try of creating a copy from an existing site template and i choosed :</p>
 <p>monochromed template by templated.</p>
 <p>i created it without looking at the source code at all .</p>
