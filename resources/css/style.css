@@ -1,0 +1,250 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: sans-serif, cursive, monospace;
+}
+html, body{
+  overflow-x: hidden;
+}
+/*..Header..*/
+header{
+  /*..background..*/
+  background-image: url(../images/header.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 480px;
+  /*..flex container (#template-name, #nav)..*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#template-name{
+  margin-bottom: 50px;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#template-name p{
+  color: gray;
+  font-size: 25px;
+  margin-left: 22.5%;
+  margin-right: 25%;
+}
+#nav{
+  display: flex;
+  flex-direction: row;  
+  background-color: black; 
+  border-radius: 40px; 
+  padding: 0px 40px;
+}
+#nav a{
+  color: #7B7B7B;
+  padding: 1.5rem;
+}
+#nav a:hover{
+  color:white;
+}
+#nav #current{
+  color: white;
+}
+/*..body..*/
+body{
+  background-image: url(../images/overlay.png);
+}
+/*..Article..*/
+article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+article h1{
+  font-size: 32pt;
+  margin: 100px 0px 30px -45vw;
+  }
+#cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px #DBDBDB solid;
+  width: 80vw;
+  padding-bottom: 130px;
+  }
+.card{
+  display: flex;
+  flex-direction: column;
+}
+.card-image{
+  height: 150px;
+  width: 250px;
+  border-radius: 5px;
+}
+.card p{
+  margin-top: 20px;
+  width: 250px;
+  font-size: 10.5pt;
+  word-spacing: 3px;
+  line-height: 30px;
+}
+.button{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-width: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*..section..*/
+#h1-p{
+  margin-left: 3%;
+}
+#h1-p h1{
+  font-size: 32pt;
+  margin-bottom: 20px;
+  padding-top: 100px;
+}
+#h1-p p{
+  font-size: 13pt;
+}
+#second-cards-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+#card-two{
+  width: 60%;
+  }
+#card-two img, p{
+  width: 95%;
+  line-height: 30px;
+  padding-bottom: 40px;
+}
+#m-copy{
+  font-weight: bold;
+}
+#card-two a{
+  color: red;
+  text-decoration: underline;
+}
+#card-info{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10%;
+}
+#card-info #p1{
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+#card-info #p2{
+  line-height: 30px;
+}
+#card-info a{
+  line-height: 40px;
+  color: red;
+  text-decoration: underline;
+}
+/*..footer..*/
+footer{
+  background-color: black;
+}
+footer p{
+  color: gray;
+}
+#the-big-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#container-of-one-cards-container{
+  display: flex;
+  flex-direction: row;
+  padding: 100px 5%;
+}
+#container-of-one-cards-container img{
+  height:80px;
+  width: 80px;
+  border-radius: 5px;
+  margin: 0px 15px 15px 0px;
+}
+#container-of-one-cards-container p{
+  font-size: 10pt;
+  line-height: 20px;
+}
+.one-card{
+  width: 350px;
+}
+.f-card{
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+#second-card{
+  padding: 100px 2%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+#second-card h1{
+  font-size: 32pt;
+}
+#second-card a{
+  color: red;
+  text-decoration: underline;
+  line-height: 40px;
+}
+#design-by {
+  color: #4F4F4F;
+  text-align: center;
+  padding: 50px 0px;
+}
+#design-by a{
+  color: gray;
+}
+/*..media queries..*/
+@media screen and (max-width: 700px){
+  /*header*/
+  #template-name{font-size: 15pt;}
+  #nav{padding: 0px;}
+  a{padding: 10px; font-size: 15px;}
+  /**footer**/
+  #the-big-container{flex-direction: column;}
+  #container-of-one-cards-container{flex-direction: column; padding: 40px 20px;}
+  .f-card{width: 90%;}
+  #second-card{padding: 0px 5%;}
+  #second-card h1{font-size: 15pt; padding-bottom: 20px;}
+  #second-card p{font-size: 10pt; padding-bottom: 0px;}
+  #second-card a{line-height: 20px;}
+  #design-by {padding-top: 0px;}
+}
+@media screen and (max-width: 500px){
+  /*header*/
+  header{height: 250px;}
+  #template-name{font-size: 14px; margin-top: 100px;}
+  #template-name p{font-size: 16px;}
+  #nav{ margin-left: 10px; margin-right: 10px; box-shadow:0px 4px rgba(125,125,125,0.6);}
+  #nav a{padding: 5px; font-size: 10px; font-weight: bold;}
+  /*..article..*/
+  article h1{font-size: 16pt; margin: 100px 15vw 30px 0px;}
+  #cards-container{flex-direction: column; align-items: center; padding-bottom: 20px;}
+  .card-image{ min-width: 85vw; height: 200px; }
+  .card p{width: 85vw;}
+  .button{width: 85vw;}
+  /*section*/
+  #second-cards-container{ flex-direction: column; justify-content:none; padding-top: 10px;}
+  #card-two{width: 95%; margin: 0px 2%; margin-bottom: 50px;}
+  #h1-p h1{padding-top: 10px;}
+  #card-info{width: 95%; margin: 0px 2%; margin-top: -15%;}
+  #card-info #p1{margin-bottom: 10px;}
+  #card-info p,a{font-size: 10pt;}
+  #card-info {padding-top: 20px;}
+  #card-info a{line-height: 10px;}
+}
